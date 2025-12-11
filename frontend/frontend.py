@@ -28,7 +28,7 @@ if send and user_input:
     bot_reply = generate_response(user_input)
     st.session_state['conversation'].append(("Bot", bot_reply))
 
-# DISPLAY CHAT HISTORY
+# MAINTAINS FULL CHAT HISTORY
 st.subheader("Conversation")
 for speaker, msg in st.session_state['conversation']:
     if speaker == "User":
@@ -36,7 +36,7 @@ for speaker, msg in st.session_state['conversation']:
     else:
         st.write(f"**Bot:** {msg}")
 
-# STATEMENT-LEVEL SENTIMENT (Tier 2)
+# STATEMENT-LEVEL SENTIMENT ANALYSIS (Tier 2)
 if st.session_state['sentiments']:
     st.subheader("Statement-Level Sentiments (Tier 2)")
     for msg, score, label in st.session_state['sentiments']:
@@ -50,7 +50,7 @@ if st.button("Show Overall Conversation Sentiment"):
         scores = [s for (_, s, _) in st.session_state['sentiments']]
         avg = sum(scores) / len(scores)
 
-        # Label for whole conversation
+        # Sentiment Analysis for the entire conversation and overall emotional direction based on the full exchange
         if avg > 0.1:
             overall_label = "Overall Positive — user is generally satisfied."
         elif avg < -0.1:
