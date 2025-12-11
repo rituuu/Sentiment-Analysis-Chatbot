@@ -7,15 +7,11 @@ from app.chatbot import analyze_sentiment
 
 st.title("Sentiment Analysis Chatbot")
 
-# Initialize session state
 if 'conversation' not in st.session_state:
-    st.session_state['conversation'] = []   # full chat history
+    st.session_state['conversation'] = []  
 if 'sentiments' not in st.session_state:
-    st.session_state['sentiments'] = []     # list of (msg, score, label)
+    st.session_state['sentiments'] = []    
 
-# ------------------------------
-# USER INPUT FORM
-# ------------------------------
 with st.form("chat_form"):
     user_input = st.text_input("You:")
     send = st.form_submit_button("Send")
@@ -32,9 +28,7 @@ if send and user_input:
     bot_reply = generate_response(user_input)
     st.session_state['conversation'].append(("Bot", bot_reply))
 
-# ------------------------------
 # DISPLAY CHAT HISTORY
-# ------------------------------
 st.subheader("Conversation")
 for speaker, msg in st.session_state['conversation']:
     if speaker == "User":
@@ -42,17 +36,13 @@ for speaker, msg in st.session_state['conversation']:
     else:
         st.write(f"**Bot:** {msg}")
 
-# ------------------------------
 # STATEMENT-LEVEL SENTIMENT (Tier 2)
-# ------------------------------
 if st.session_state['sentiments']:
     st.subheader("Statement-Level Sentiments (Tier 2)")
     for msg, score, label in st.session_state['sentiments']:
         st.write(f"User: \"{msg}\" → **Sentiment: {label}** *(score = {round(score,3)})*")
 
-# ------------------------------
 # CONVERSATION-LEVEL SENTIMENT (Tier 1)
-# ------------------------------
 if st.button("Show Overall Conversation Sentiment"):
     st.subheader("Overall Conversation Sentiment (Tier 1)")
 
@@ -73,9 +63,7 @@ if st.button("Show Overall Conversation Sentiment"):
     else:
         st.write("No user messages yet.")
 
-# ------------------------------
 # MOOD SHIFT TREND (Tier 2 Optional)
-# ------------------------------
 if st.button("Show Mood Shift Trend"):
     st.subheader("Mood Shift Across Conversation (Tier 2 Bonus)")
 
