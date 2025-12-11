@@ -1,0 +1,3 @@
+venv/
+SENTIMENT_ANALYSIS_CHATBOT.egg-info
+.env
