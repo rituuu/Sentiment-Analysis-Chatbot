@@ -9,14 +9,14 @@ Tier 1 and Tier 2 both are implemented. Along with UI advancements.
 - **Tier 2 (optional, implemented):** Statement-level sentiment analysis and mood-shift summary.
 
 #### Tier 1 – Conversation-Level Sentiment Analysis (Mandatory Requirement)
-• Maintains full conversation history.
-• At the end of the interaction, it generates sentiment analysis for the entire conversation.
-• Clearly indicates the overall emotional direction based on the full exchange.
+- Maintains full conversation history.
+- At the end of the interaction, it generates sentiment analysis for the entire conversation.
+- Clearly indicates the overall emotional direction based on the full exchange.
 
 #### Tier 2 – Statement-Level Sentiment Analysis  (Additional)
-• Performs sentiment evaluation for every user message individually.
-• Displays each message alongside its sentiment output.
-• Optional enhancement for additional credit: Summarises trend or shift in mood across the
+- Performs sentiment evaluation for every user message individually.
+- Displays each message alongside its sentiment output.
+- Optional enhancement for additional credit: Summarises trend or shift in mood across the
 conversation.
 
 ## How to run
