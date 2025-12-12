@@ -94,17 +94,17 @@ http://localhost:8502
 
 ## SENTIMENT LOGIC:
 I built a **three-layer hybrid sentiment analysis** engine.
-**First**, a **rule-based classifier** instantly detects **crisis phrases, mixed emotions, and negation patterns**.
-**Second**, **TextBlob** provides **continuous polarity scoring for subtle or neutral emotions**.
-**Third**, I **used Gemini only for edge cases where rule-based and statistical methods disagree—such as sarcasm, contradictions**, or hidden sentiment.
+-**First**, a **rule-based classifier** instantly detects **crisis phrases, mixed emotions, and negation patterns**.
+-**Second**, **TextBlob** provides **continuous polarity scoring for subtle or neutral emotions**.
+-**Third**, I **used Gemini only for edge cases where rule-based and statistical methods disagree—such as sarcasm, contradictions**, or hidden sentiment.
 
 This **layered pipeline makes the chatbot accurate, interpretable, safe, and cost-efficient.**
 It mirrors real-world industry systems and shows how I think about reliability and scalability when designing AI components.
 **Hybrid pipelines are the backbone of customer support bots**, therapist AIs, and moderation systems. Crisis phrases are caught immediately—no statistical errors. **My pipeline reduces the LLM API calls by ~70%, saving cost.**
 In this project, This is how I built a **production-grade sentiment analysis engine** using a **three-layer hybrid pipeline:**
-**1.	Rule-Based Sentiment Classification**
-**2.	TextBlob Statistical Polarity Analysis**
-**3.	Gemini LLM Fallback for Edge Cases**
+-**1.	Rule-Based Sentiment Classification**
+-**2.	TextBlob Statistical Polarity Analysis**
+-**3.	Gemini LLM Fallback for Edge Cases**
 
 This layered approach ensures the chatbot handles **simple, complex, and ambiguous human emotions with high accuracy**—similar to how real-world conversational AI systems are designed.
 **1. Rule-Based Sentiment Analysis (Layer 1)**
