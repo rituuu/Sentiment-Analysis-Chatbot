@@ -154,7 +154,7 @@ but rule-based logic catches it as Very Negative immediately.
 -	Converts text to lowercase
 -	Looks for any keyword matches
 -	Applies logic rules (mixed feelings, negation handling)
--	Returns early if classification is clear
+-	Returns early if classification is clear.
 **This layer handles deterministic, high-risk or obvious emotional statements.**
 ________________________________________
 ### 2. TextBlob Sentiment Analysis (Layer 2 – Statistical Model)
