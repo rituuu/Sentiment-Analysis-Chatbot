@@ -190,7 +190,7 @@ I built an **edge-case detector** that flags ambiguous or contradictory emotions
 Edge cases include:
 -	Neutral label but emotional keywords
 “I’m smiling on the outside but broken inside.”
--Contradictory polarity
+- Contradictory polarity
 negative words + positive score
 -	Negation conflicts
 “It’s not good, but I’ll survive.”
