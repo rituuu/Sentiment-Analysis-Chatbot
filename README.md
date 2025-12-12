@@ -124,10 +124,6 @@ In this project, this is how I built a **production-grade sentiment analysis eng
 - **2. TextBlob Statistical Polarity Analysis**  
 - **3. Gemini LLM Fallback for Edge Cases**
 
----
-
-## Why This Matters
-
 This layered approach ensures the chatbot handles **simple, complex, and ambiguous human emotions with high accuracy** — similar to how real-world conversational AI systems are designed.
 
 ---
