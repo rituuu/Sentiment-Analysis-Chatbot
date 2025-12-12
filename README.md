@@ -31,6 +31,21 @@ conversation.
 
 #### Access the full conversation here: https://drive.google.com/file/d/1TMcXt7_YtFjLBggFT78iC-X6S6UkTiUN/view?usp=sharing
 
+### Tests for edge cases like negation and mixed feelings: I am not good, I am never successful, I am happy and anxious
+#### Check here: https://drive.google.com/file/d/1kaN-Ip25p58IdVioDS1sKl7zY1ZtK0lr/view?usp=sharing
+
+### Highlights of innovations, additional features, enhancements:
+- Used Streamlit for Webapp
+- Used Avatars for User and Both
+- Displays Sentiment scores alongside the conversation for detecting the extent of emotion.
+- Color Coded Sentiment Detection: Light Green for positive,
+- Green for very positive,
+- Light red for negative,
+- Red for very Negative,
+- Light yellow for Mixed feelings,
+- Grey for Neutral,
+- Blue for bot
+  
 ## How to run
 ### Clone the Repository
 
