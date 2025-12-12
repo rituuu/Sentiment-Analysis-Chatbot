@@ -56,10 +56,10 @@ http://localhost:8502
 ![final git version](https://github.com/user-attachments/assets/023ec8e8-789d-49da-a526-5ef47dcb3df3)
 ![final git](https://github.com/user-attachments/assets/762c13a3-9538-42fd-8e17-d684f7273bba)
 
-### Overall Sentiment:
+### Overall Conversation Sentiment:
 ![overall sentiment](https://github.com/user-attachments/assets/671dca9a-6c5a-4eec-b6b7-a634be2e572a)
 
-### Trend:
+### Mood Shift Trend:
 ![trend](https://github.com/user-attachments/assets/797ee8ad-33e4-4bca-8e03-41d7a31a7773)
 
 #### Access the full conversation here: https://drive.google.com/file/d/1TMcXt7_YtFjLBggFT78iC-X6S6UkTiUN/view?usp=sharing
