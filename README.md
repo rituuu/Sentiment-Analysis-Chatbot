@@ -107,7 +107,7 @@ In this project, This is how I built a **production-grade sentiment analysis eng
 -**3.	Gemini LLM Fallback for Edge Cases**
 
 This layered approach ensures the chatbot handles **simple, complex, and ambiguous human emotions with high accuracy**—similar to how real-world conversational AI systems are designed.
-###**1. Rule-Based Sentiment Analysis (Layer 1)**
+###1. Rule-Based Sentiment Analysis (Layer 1)
 #### What it does
 This layer uses **manually curated emotional keyword dictionaries:**
 -	very_negative_words → suicidal, devastated, hopeless
@@ -135,7 +135,7 @@ but rule-based logic catches it as Very Negative immediately.
 -	Returns early if classification is clear
 **This layer handles deterministic, high-risk or obvious emotional statements.**
 ________________________________________
-###**2. TextBlob Sentiment Analysis (Layer 2 – Statistical Model)**
+###2. TextBlob Sentiment Analysis (Layer 2 – Statistical Model)
 #### What it does
 If the rule-based logic doesn’t find a strong emotional pattern, the system uses **TextBlob’s polarity score**
 (-1 to +1).
