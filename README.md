@@ -1,4 +1,4 @@
-# Chatbot with Sentiment Analysis
+# Sentiment Analysis Chatbot
 
 ## Overview
 This project implements a simple chatbot that maintains full conversation history and performs sentiment analysis at both conversation and statement levels.
@@ -43,14 +43,24 @@ streamlit run frontend/frontend.py
 
 Streamlit will open automatically in your browser at:
 
-http://localhost:8504
+http://localhost:8502
+
 ## Technologies
 - Python
 - Gemini 2.5 flash lite for conversational reasoning
 - Streamlit
 - Modular code: importing files as packages
 - TextBlob - Simple lexicon-based sentiment analyzer (custom, lightweight)
-  
+## Working sample:
+![final git version](https://github.com/user-attachments/assets/a39b89a2-cf3f-4320-9f66-18d2dc1d20b2)
+![final git](https://github.com/user-attachments/assets/1a4c5cb4-34f6-4e0b-bf02-ef5479a5d0e6)
+
+# Overall Sentiment:
+![overall sentiment](https://github.com/user-attachments/assets/671dca9a-6c5a-4eec-b6b7-a634be2e572a)
+
+# Trend:
+![trend](https://github.com/user-attachments/assets/797ee8ad-33e4-4bca-8e03-41d7a31a7773)
+
 ## Sentiment logic
 - Tokenizes user messages and counts occurrences of positive/negative words from small built-in lexicons.
 - Computes a normalized score = (pos - neg)/len(tokens) in [-1,1].
