@@ -72,10 +72,10 @@ pip install –r requirements.txt
 ```
 ### 4. Set Up Environment Variables
 ```bash
-Create a `.env` file with your API keys:
+Create a `.env` file with your API key:
 ```
 ```bash
-GOOGLE_API_KEY=your_google_key
+GOOGLE_API_KEY=your_google_api_key
 ```
 
 ### 5. Run the Application
