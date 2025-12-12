@@ -101,7 +101,7 @@ http://localhost:8502
   
 ---
 
-## SENTIMENT LOGIC:
+## SENTIMENT ANALYSIS LOGIC:
 
 I built a **three-layer hybrid sentiment analysis** engine.  
 **First**, a **rule-based classifier** instantly detects **crisis phrases, mixed emotions, and negation patterns**.  
