@@ -36,15 +36,15 @@ conversation.
 
 ### Highlights of innovations, additional features, enhancements:
 - Used Streamlit for Webapp
-- Used Avatars for User and Both
+- Used Avatars for User and Bot
 - Displays Sentiment scores alongside the conversation for detecting the extent of emotion.
 - Color Coded Sentiment Detection: Light Green for positive,
-- Green for very positive,
-- Light red for negative,
-- Red for very Negative,
-- Light yellow for Mixed feelings,
-- Grey for Neutral,
-- Blue for bot
+  - Green for very positive,
+  - Light red for negative,
+  - Red for very Negative,
+  - Light yellow for Mixed feelings,
+  - Grey for Neutral,
+  - Blue for bot
   
 ## How to run
 ### Clone the Repository
