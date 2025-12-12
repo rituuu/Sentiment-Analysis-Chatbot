@@ -31,8 +31,7 @@ conversation.
 
 #### Access the full conversation here: https://drive.google.com/file/d/1TMcXt7_YtFjLBggFT78iC-X6S6UkTiUN/view?usp=sharing
 
-### Tests for edge cases like negation and mixed feelings: I am not good, I am never successful, I am happy and anxious
-#### Check here: https://drive.google.com/file/d/1kaN-Ip25p58IdVioDS1sKl7zY1ZtK0lr/view?usp=sharing
+### Tests for edge cases like negation and mixed feelings: I am not good, I am never successful, I am happy and anxious. Check here: https://drive.google.com/file/d/1kaN-Ip25p58IdVioDS1sKl7zY1ZtK0lr/view?usp=sharing
 
 ### Highlights of innovations, additional features, enhancements:
 - Used Streamlit for Webapp
@@ -85,7 +84,7 @@ Streamlit will open automatically in your browser at:
 
 http://localhost:8502
 
-## Technologies
+## Technologies Used:
 - Python
 - Gemini 2.5 flash lite for conversational reasoning
 - Streamlit
@@ -107,7 +106,7 @@ It mirrors real-world industry systems and shows how I think about reliability a
 
 ---
 
-## 🚀 Three-Layer Architecture
+## Three-Layer Architecture
 
 In this project, this is how I built a **production-grade sentiment analysis engine** using a **three-layer hybrid pipeline:**
 
@@ -117,7 +116,7 @@ In this project, this is how I built a **production-grade sentiment analysis eng
 
 ---
 
-## 🎯 Why This Matters
+## Why This Matters
 
 This layered approach ensures the chatbot handles **simple, complex, and ambiguous human emotions with high accuracy** — similar to how real-world conversational AI systems are designed.
 
