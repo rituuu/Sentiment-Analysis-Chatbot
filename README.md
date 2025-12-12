@@ -15,6 +15,7 @@ Tier 1 and Tier 2 both are implemented. Along with UI advancements.
 ##### Overall Conversation Sentiment:
 ![overall sentiment](https://github.com/user-attachments/assets/671dca9a-6c5a-4eec-b6b7-a634be2e572a)
 
+---
 
 #### Tier 2 – Statement-Level Sentiment Analysis  (Additional)
 - Performs sentiment evaluation for every user message individually.
@@ -34,6 +35,8 @@ conversation.
 ### Tests for edge cases like negation and mixed feelings: I am not good, I am never successful, I am happy and anxious. 
 #### Check here: https://drive.google.com/file/d/1kaN-Ip25p58IdVioDS1sKl7zY1ZtK0lr/view?usp=sharing
 
+---
+
 ### Highlights of innovations, additional features, enhancements:
 - Used Streamlit for Webapp
 - Used Avatars for User and Bot
@@ -45,7 +48,9 @@ conversation.
   - Light yellow for Mixed feelings,
   - Grey for Neutral,
   - Blue for bot
-  
+
+---
+
 ## How to run
 ### Clone the Repository
 
@@ -85,12 +90,16 @@ Streamlit will open automatically in your browser at:
 
 http://localhost:8502
 
+---
+
 ## Technologies Used:
 - Python
 - Gemini 2.5 flash lite for conversational reasoning
 - Streamlit
 - Modular code: importing files as packages
 - TextBlob - Simple lexicon-based sentiment analyzer (custom, lightweight)
+  
+---
 
 ## SENTIMENT LOGIC:
 
