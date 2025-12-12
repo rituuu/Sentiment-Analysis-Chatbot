@@ -51,14 +51,15 @@ http://localhost:8502
 - Streamlit
 - Modular code: importing files as packages
 - TextBlob - Simple lexicon-based sentiment analyzer (custom, lightweight)
-## Working sample:
-![final git version](https://github.com/user-attachments/assets/a39b89a2-cf3f-4320-9f66-18d2dc1d20b2)
-![final git](https://github.com/user-attachments/assets/1a4c5cb4-34f6-4e0b-bf02-ef5479a5d0e6)
 
-# Overall Sentiment:
+## Working Project:
+![final git version](https://github.com/user-attachments/assets/023ec8e8-789d-49da-a526-5ef47dcb3df3)
+![final git](https://github.com/user-attachments/assets/762c13a3-9538-42fd-8e17-d684f7273bba)
+
+## Overall Sentiment:
 ![overall sentiment](https://github.com/user-attachments/assets/671dca9a-6c5a-4eec-b6b7-a634be2e572a)
 
-# Trend:
+## Trend:
 ![trend](https://github.com/user-attachments/assets/797ee8ad-33e4-4bca-8e03-41d7a31a7773)
 
 ## Sentiment logic
