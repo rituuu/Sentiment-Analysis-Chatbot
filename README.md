@@ -12,12 +12,24 @@ Tier 1 and Tier 2 both are implemented. Along with UI advancements.
 - Maintains full conversation history.
 - At the end of the interaction, it generates sentiment analysis for the entire conversation.
 - Clearly indicates the overall emotional direction based on the full exchange.
+##### Overall Conversation Sentiment:
+![overall sentiment](https://github.com/user-attachments/assets/671dca9a-6c5a-4eec-b6b7-a634be2e572a)
+
 
 #### Tier 2 – Statement-Level Sentiment Analysis  (Additional)
 - Performs sentiment evaluation for every user message individually.
 - Displays each message alongside its sentiment output.
 - Optional enhancement for additional credit: Summarises trend or shift in mood across the
 conversation.
+
+#### Working Project Tier 2 implementation:
+![final git version](https://github.com/user-attachments/assets/023ec8e8-789d-49da-a526-5ef47dcb3df3)
+![final git](https://github.com/user-attachments/assets/762c13a3-9538-42fd-8e17-d684f7273bba)
+
+### Mood Shift Trend for additional Credit:
+![trend](https://github.com/user-attachments/assets/797ee8ad-33e4-4bca-8e03-41d7a31a7773)
+
+#### Access the full conversation here: https://drive.google.com/file/d/1TMcXt7_YtFjLBggFT78iC-X6S6UkTiUN/view?usp=sharing
 
 ## How to run
 ### Clone the Repository
@@ -64,18 +76,6 @@ http://localhost:8502
 - Streamlit
 - Modular code: importing files as packages
 - TextBlob - Simple lexicon-based sentiment analyzer (custom, lightweight)
-
-### Working Project:
-![final git version](https://github.com/user-attachments/assets/023ec8e8-789d-49da-a526-5ef47dcb3df3)
-![final git](https://github.com/user-attachments/assets/762c13a3-9538-42fd-8e17-d684f7273bba)
-
-#### Access the full conversation here: https://drive.google.com/file/d/1TMcXt7_YtFjLBggFT78iC-X6S6UkTiUN/view?usp=sharing
-
-### Overall Conversation Sentiment:
-![overall sentiment](https://github.com/user-attachments/assets/671dca9a-6c5a-4eec-b6b7-a634be2e572a)
-
-### Mood Shift Trend:
-![trend](https://github.com/user-attachments/assets/797ee8ad-33e4-4bca-8e03-41d7a31a7773)
 
 ## Sentiment logic
 - Tokenizes user messages and counts occurrences of positive/negative words from small built-in lexicons.
