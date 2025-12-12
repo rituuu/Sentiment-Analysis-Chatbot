@@ -126,8 +126,27 @@ In this project, this is how I built a **production-grade sentiment analysis eng
 
 This layered approach ensures the chatbot handles **simple, complex, and ambiguous human emotions with high accuracy** — similar to how real-world conversational AI systems are designed.
 
----
+#### How All Three Layers Work Together
+I designed the sentiment system using a **“triangular defense approach.”**
+**Each layer compensates for the weakness of the previous one**, providing a balance of **speed, determinism, intelligence, and context awareness.**
 
+#### Layer 1: Rule-Based
+-	Handles explicit emotional expressions
+-	Immediate and safe classification
+-	Zero ambiguity
+
+#### Layer 2: TextBlob
+-	Handles subtle or neutral emotional tones
+- Adds continuous scoring
+-	Captures soft polarity
+
+#### Layer 3: Gemini
+-	Resolves ambiguous, contradictory, sarcastic, or complex emotional expressions
+-	Understands contextual sentiment
+-	Acts as an intelligent safety net
+This hybrid structure makes the chatbot both **robust and reliable, and scalable.**
+
+---
 
 ### 1. Rule-Based Sentiment Analysis (Layer 1)
 #### What it does
@@ -208,22 +227,4 @@ This layer demonstrates **advanced analytical thinking:**
 -	Ensuring **max safety and accuracy** in sensitive conversations.
 This layer handles sarcasm, context-dependent sentiment, hidden emotions, and conversational subtleties.
 ________________________________________
-#### How All Three Layers Work Together
-I designed the sentiment system using a **“triangular defense approach.”**
-**Each layer compensates for the weakness of the previous one**, providing a balance of **speed, determinism, intelligence, and context awareness.**
 
-#### Layer 1: Rule-Based
--	Handles explicit emotional expressions
--	Immediate and safe classification
--	Zero ambiguity
-
-#### Layer 2: TextBlob
--	Handles subtle or neutral emotional tones
-- Adds continuous scoring
--	Captures soft polarity
-
-#### Layer 3: Gemini
--	Resolves ambiguous, contradictory, sarcastic, or complex emotional expressions
--	Understands contextual sentiment
--	Acts as an intelligent safety net
-This hybrid structure makes the chatbot both **robust and reliable, and scalable.**
