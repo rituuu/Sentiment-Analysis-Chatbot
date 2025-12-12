@@ -202,10 +202,10 @@ The model then interprets context, sarcasm, implicit emotion, or complex languag
 
 #### Why it is used
 This layer demonstrates **advanced analytical thinking:**
--	Understanding limitations of rule-based and statistical models
--	Adding AI as a **precision tool only when necessary**
--	Keeping API costs low by **calling Gemini only for complex cases**
--	Ensuring **max safety and accuracy** in sensitive conversations
+-	Understanding limitations of rule-based and statistical models.
+-	Adding AI as a **precision tool only when necessary.**
+-	Keeping API costs low by **calling Gemini only for complex cases.**
+-	Ensuring **max safety and accuracy** in sensitive conversations.
 This layer handles sarcasm, context-dependent sentiment, hidden emotions, and conversational subtleties.
 ________________________________________
 #### How All Three Layers Work Together
