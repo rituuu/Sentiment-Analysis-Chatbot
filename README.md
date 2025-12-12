@@ -52,16 +52,17 @@ http://localhost:8502
 - Modular code: importing files as packages
 - TextBlob - Simple lexicon-based sentiment analyzer (custom, lightweight)
 
-## Working Project:
+### Working Project:
 ![final git version](https://github.com/user-attachments/assets/023ec8e8-789d-49da-a526-5ef47dcb3df3)
 ![final git](https://github.com/user-attachments/assets/762c13a3-9538-42fd-8e17-d684f7273bba)
 
-## Overall Sentiment:
+### Overall Sentiment:
 ![overall sentiment](https://github.com/user-attachments/assets/671dca9a-6c5a-4eec-b6b7-a634be2e572a)
 
-## Trend:
+### Trend:
 ![trend](https://github.com/user-attachments/assets/797ee8ad-33e4-4bca-8e03-41d7a31a7773)
 
+#### Access the full conversation here: https://drive.google.com/file/d/1TMcXt7_YtFjLBggFT78iC-X6S6UkTiUN/view?usp=sharing
 ## Sentiment logic
 - Tokenizes user messages and counts occurrences of positive/negative words from small built-in lexicons.
 - Computes a normalized score = (pos - neg)/len(tokens) in [-1,1].
