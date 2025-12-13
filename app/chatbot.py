@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Gemini Model Configuration
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
 
@@ -24,10 +25,10 @@ def generate_response(prompt):
         if "quota" in msg or "limit" in msg:
             return "It seems we have reached the API quota limit. Please try again later."
         return f"An error occurred: {e}"
-        
+
+# Sentiment Analyzer
 class SentimentAnalyzer:
     """
-    Sentiment Analyzer uses Hybrid Approach: 
     Rule-based + TextBlob hybrid sentiment analyzer
     with Gemini fallback for edge cases.
     """
@@ -39,7 +40,7 @@ class SentimentAnalyzer:
         """
         self.llm_model = llm_model
 
-        # Defining Keyword Dictionaries
+        # Predefined keyword dictionaries
         self.very_negative_words = {
             "hopeless", "terrible", "depressed", "suicidal",
             "can't handle", "worthless", "miserable", "devastated"
@@ -62,22 +63,23 @@ class SentimentAnalyzer:
             "can't", "cannot"
         }
     
-    # Main function: Analyze sentiment
+    # Main function: Analyze sentiment follows Hybrid Approach
     def analyze_sentiment(self, text: str):
         text_lower = text.lower()
-
-        # Returns Highly Negative score for very negative words
+         
+        # First, Rule Based Classifier
+        # For Hard Very-Negative Patterns return 0.8
         if self._contains_any(text_lower, self.very_negative_words):
             return "Very Negative", -0.8
 
-        # Checks both Negative and positive words
+        # For Mixed Feelings return 0
         has_neg = self._contains_any(text_lower, self.negative_words)
         has_pos = self._contains_any(text_lower, self.positive_words)
 
         if has_neg and has_pos:
             return "Mixed Feelings", 0.0
 
-        # Negation Handling
+        # For Negation Handling
         has_negation = self._contains_any(text_lower, self.negation_words)
         if has_negation and has_pos:
             return "Negative", -0.4
@@ -87,9 +89,8 @@ class SentimentAnalyzer:
             return "Negative", -0.4
         if has_pos:
             return "Positive", 0.5
-        
-        # USING TEXT BLOB FOR MORE ADVANCED ANALYSIS
-        # Checking Polarity using Text Blob
+
+        # Second, using TextBlob Score for more advanced analysis 
         blob_score = TextBlob(text).sentiment.polarity
         tb_label = self._textblob_label(blob_score)
 
@@ -102,11 +103,11 @@ class SentimentAnalyzer:
             has_neg=has_neg,
             has_negation=has_negation
         )
-
-        if not is_edge_case:  # If it not an edge case we will directly use text blob score
+        # If not an edge case evaluate directly using Text Blob Score
+        if not is_edge_case:
             return tb_label, round(blob_score, 3)
 
-        # If an edge case is detected, we'll fallback to Gemini to handle hard and advanced sentences
+        # If an edge case is detected -> Fallback to Gemini
         return self._llm_fallback(text, tb_label, blob_score)
 
     # Check if text contains any keyword
@@ -127,7 +128,7 @@ class SentimentAnalyzer:
             return "Negative"
         return "Very Negative"
 
-    # Function to detects Edge cases 
+    # Function to Detect Edge cases
     def _is_edge_case(self, text_lower, tb_label, blob_score, has_pos, has_neg, has_negation):
         # Neutral but emotional words present
         if tb_label == "Neutral" and (has_pos or has_neg):
@@ -172,11 +173,13 @@ class SentimentAnalyzer:
 
 sentiment_analyzer = SentimentAnalyzer(llm_model=model)
 
-# Global Analyzer Instance
+# Create global analyzer instance
 sentiment_analyzer = SentimentAnalyzer(llm_model=model)
+
 
 def analyze_sentiment(text: str):
     """
-    Wrapper function so that imports work
+    Wrapper function so older code that imports analyze_sentiment still works.
+    Internally calls the class-based SentimentAnalyzer.
     """
     return sentiment_analyzer.analyze_sentiment(text)
